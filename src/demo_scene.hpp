@@ -1,7 +1,7 @@
 #pragma once
+#include "interpolated/functions.hpp"
 #include "peztool/peztool.hpp"
 #include "renderer.hpp"
-#include "interpolation/functions.hpp"
 
 /** The scene that will be used for the demo.
  * A scene is a collection of Entities and systems.

@@ -1,6 +1,6 @@
 #pragma once
+#include "interpolated/interpolated.hpp"
 #include "peztool/core/system.hpp"
-#include "interpolation/interpolated.hpp"
 
 /// Very basic renderer that draws a circle at the position 'circle_position'
 struct Renderer final : public pez::Renderer<>
