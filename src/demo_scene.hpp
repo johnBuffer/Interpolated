@@ -22,6 +22,9 @@ struct DemoScene final : public pez::Scene<pez::EntityPack<>, pez::SystemPack<>,
     /// Defines events callbacks
     void registerEvents(pez::EventHandler& handler) override
     {
+        handler.addCallback<sf::Event::Closed>([](sf::Event::Closed const&) {
+            pez::App::exit();
+        });
         // Exit with Esc
         handler.onKeyPressed(sf::Keyboard::Key::Escape, [](sf::Event::KeyPressed const&) {
             pez::App::exit();

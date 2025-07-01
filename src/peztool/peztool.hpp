@@ -23,7 +23,7 @@ public:
         , m_render_size{render_size}
     {
         setTickRate(120, true);
-        setMouseCursorVisible(false);
+        setMouseCursorVisible(true);
 
         // Create default singletons
         // The number of threads to use
